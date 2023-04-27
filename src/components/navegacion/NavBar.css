@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@600;700;800;900&display=swap');
+
 .navbar{
     position: relative;
     display: flex;
@@ -12,10 +14,27 @@
 .nav-link {
     display: block;
     padding: 0.5rem 1rem;
-    color: white;
+    color:#0f1d28;
     text-decoration: none;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
+
+.nav-link-taylor{
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #0f1d28;
+    text-decoration: none;
+    font-weight: 690;
+    font-size: 40px;
+    font-family: 'Noto Sans Georgian', sans-serif;
+}
+
+.nav-item-dropdown{
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #ac9eb8;
+    background:  #0f1d28;;
+    text-decoration: none;
+}   
 
 a{
     color: white;

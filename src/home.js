@@ -1,15 +1,18 @@
 import React from "react";
 import "index.css";
-import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import { BrowserRouter, Routes, Switch, Route} from "react-router-dom";
 import NavBar from "./components/navegacion/NavBar";
 
 
 function Home(){
     return(
         <div className="wow">
-            <Router>
-                <NavBar/>
-            </Router>
+            <BrowserRouter>
+            <NavBar/>
+            <Routes>
+                <Route/>
+            </Routes>
+            </BrowserRouter>
         </div>
     );
 }

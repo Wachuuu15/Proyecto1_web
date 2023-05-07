@@ -11,6 +11,8 @@
     background-color: #ac9eb8;
 }
 
+  
+
 .nav-link {
     display: block;
     padding: 0.5rem 1rem;
@@ -18,24 +20,65 @@
     text-decoration: none;
 }
 
-.nav-link-taylor{
+.nav-link-merch{
     display: block;
     padding: 0.5rem 1rem;
     color: #0f1d28;
     text-decoration: none;
-    font-weight: 690;
-    font-size: 40px;
+    font-weight: bold;
+    font-size: 17px;
     font-family: 'Noto Sans Georgian', sans-serif;
 }
 
-.nav-item-dropdown{
+.nav-link-mdn{
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #0f1d28;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+    font-family: 'Noto Sans Georgian', sans-serif;
+}
+
+.nav-link-newsletter{
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #0f1d28;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+    font-family: 'Noto Sans Georgian', sans-serif;
+}
+
+.nav-link-events{
     display: block;
     padding: 0.5rem 1rem;
     color: #ac9eb8;
-    background:  #0f1d28;;
     text-decoration: none;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 17px;
+    font-family: 'Noto Sans Georgian', sans-serif;
+}
+.nav-item-dropdown{
+    display: flex;
+    padding: 0.1rem 1rem;
+    justify-content: center;
+    align-items: center;
+    background:  #0f1d28;
+    text-decoration: none;
+    width: 25%;
+    border: 1px solid #ac9eb8;
+
 }   
 
-a{
-    color: white;
-}
+
+.navbar-toggler{
+    display: block;
+    padding: 2rem 1rem;
+    background: white;
+    color:white;
+    text-decoration: none;
+} 
+

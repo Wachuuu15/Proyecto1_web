@@ -1,46 +1,51 @@
 import React from "react";
 import "./NavBar.css";
 import { Link } from 'react-router-dom';
-
+import logo from "/./imgs/logo_ts.png";
 
 
 function NavBar(){
     return(
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand">
-                <Link>
-                <img src="/imgs/logo_ts.png" width='20'/>
-                </Link>
-            </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link-taylor" href="#">Taylor Swift</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown link
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link-merch" aria-current="page" href="#">Merch</a>
+                            </li>
+
+                            <li class="nav-item-dropdown">
+                                <a class="nav-link-events" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Events
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><Link class="dropdown-item" href="#">Action</Link></li>
+                                    <li><Link class="dropdown-item" href="#">Another action</Link></li>
+                                    <li><Link class="dropdown-item" href="#">Something else here</Link></li>
+                                </ul>
+                                <button class="navbar-toggler navbar-toggler-icon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                </button>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link-newsletter" href="#">Newsletter</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link-mdn" href="#">TS Midnights</a>
+                            </li>
+                            
+                            
+                        </ul>
+                    </div>
+                    <a class="navbar-brand">
+                        <Link to='/'>
+                            <img src={logo} width='200' clas='mx-auto'/>
+                        </Link>
+                    </a>
+
+        </div>
+    </nav>
     );
 }
 export default NavBar;

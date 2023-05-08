@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@600;700;800;900&display=swap');
 
+.container-fluid{
+    padding-left: 25px;
+}
+
+
+  
 .navbar{
     position: relative;
     display: flex;
@@ -11,7 +17,9 @@
     background-color: #ac9eb8;
 }
 
-  
+.navbar-brand{
+    padding: 0px 120px;
+} 
 
 .nav-link {
     display: block;
@@ -22,7 +30,7 @@
 
 .nav-link-merch{
     display: block;
-    padding: 0.5rem 1rem;
+    padding: 0.9rem 0.9rem;
     color: #0f1d28;
     text-decoration: none;
     font-weight: bold;
@@ -32,7 +40,7 @@
 
 .nav-link-mdn{
     display: block;
-    padding: 0.5rem 1rem;
+    padding: 0.9rem 0.4rem;
     color: #0f1d28;
     text-decoration: none;
     font-weight: bold;
@@ -42,7 +50,7 @@
 
 .nav-link-newsletter{
     display: block;
-    padding: 0.5rem 1rem;
+    padding: 0.9rem 0.5rem;
     color: #0f1d28;
     text-decoration: none;
     font-weight: bold;
@@ -82,3 +90,86 @@
     text-decoration: none;
 } 
 
+.social-icons {
+    list-style: none;
+    display: flex;
+    margin-bottom: 0rem;
+    padding-left: 5rem;
+}
+  
+.social-icons li {
+    margin-right: 20px;
+}
+.social-icons ul {
+    margin-top: 0px;
+    margin-bottom: 0rem;
+    padding-left: 5rem;
+}
+  
+.facebook-icon i {
+    display: block;
+    width: 32px;
+    height: 32px;
+    font-size: 1.05em;
+    color: #ac9eb8;
+    background-color: #0f1d28;
+    border-radius: 40px;
+    padding: 4px 5px 4px 7px;
+}
+  
+.instagram-icon i {
+    display: block;
+    width: 32px;
+    height: 32px;
+    font-size: 1.05em;
+    color: #ac9eb8;
+    background-color: #0f1d28;
+    border-radius: 40px;
+    padding: 4px 5px 4px 7px;
+}
+  
+.twitter-icon i {
+    display: block;
+    width: 32px;
+    height: 32px;
+    font-size: 1.05em;
+    color: #ac9eb8;
+    background-color: #0f1d28;
+    border-radius: 40px;
+    padding: 4px 5px 4px 7px;
+}
+  
+.tiktok-icon i {
+    display: block;
+    width: 32px;
+    height: 32px;
+    font-size: 1.05em;
+    color: #ac9eb8;
+    background-color: #0f1d28;
+    border-radius: 40px;
+    padding: 4px 5px 4px 7px;
+}
+  
+.youtube-icon i {
+    display: block;
+    width: 32px;
+    height: 32px;
+    font-size: 1.05em;
+    color: #ac9eb8;
+    background-color: #0f1d28;
+    border-radius: 40px;
+    padding: 4px 5px 4px 7px;
+}
+  
+.snapchat-icon i {
+    display: block;
+    width: 32px;
+    height: 32px;
+    font-size: 1.05em;
+    color: #ac9eb8;
+    background-color: #0f1d28;
+    border-radius: 40px;
+    padding: 4px 5px 4px 7px;
+}
+  
+  

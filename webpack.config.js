@@ -1,6 +1,7 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
+
 module.exports = {
   entry: "./src/index.js",
   output: {
@@ -11,6 +12,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/index.html",
     }),
+    
   ],
   resolve: {
     modules: [__dirname, "src", "node_modules"],
@@ -27,6 +29,10 @@ module.exports = {
         test: /\.css$/,
         use: ["style-loader", "css-loader"],
       },
+      {
+        test: /fontawesome\.css$/,
+        use: 'ignore-loader'
+      },      
       {
         test: /\.png|svg|jpg|gif$/,
         use: ["file-loader"],

@@ -1,8 +1,11 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
+const mime = require('mime-types');
+
 
 
 module.exports = {
+  mode: "development",
   entry: "./src/index.js",
   output: {
     filename: "bundle.[hash].js",
@@ -36,6 +39,15 @@ module.exports = {
       {
         test: /\.png|svg|jpg|gif$/,
         use: ["file-loader"],
+      },
+      {
+        test: /\.(mp4)$/i,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+          outputPath: 'imgs',
+          mimetype: mime.lookup('mp4')
+        }
       },
     ],
   },

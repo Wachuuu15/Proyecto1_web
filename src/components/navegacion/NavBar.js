@@ -7,12 +7,11 @@ import 'bootstrap-icons/font/bootstrap-icons.css'
 
 function NavBar(){
     return(
-        
     <nav className="navbar navbar-expand-lg">
         <div className="container-fluid">
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-        </button>
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
+            </button>
 
 
         <div className="collapse navbar-collapse" id="navbarNav">
@@ -23,16 +22,20 @@ function NavBar(){
 
                             <li className="nav-item-dropdown">
                                 <a className="nav-link-events" href="#" id="navbarDropdownMenuLink"  data-bs-toggle="dropdown" aria-expanded="false">
-                                    Events
-                                    <i class="bi bi-caret-down-fill"></i>
+                                    <div className="flex-container">
+                                    <div className="text-container">Events</div>
+                                    <div className="arrow-container">
+                                        <a href="#"><i className="bi bi-caret-down-fill"></i></a>
+                                    </div>
+                                    </div>
                                 </a>
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     <li><Link className="dropdown-item" href="#">Action</Link></li>
                                     <li><Link className="dropdown-item" href="#">Another action</Link></li>
                                     <li><Link className="dropdown-item" href="#">Something else here</Link></li>
                                 </ul>
-                                
                             </li>
+
 
                             <li className="nav-item">
                                 <a className="nav-link-newsletter" href="#">Newsletter</a>
@@ -68,10 +71,7 @@ function NavBar(){
                                 <a href="#"><i className="bi bi-snapchat"></i></a>
                             </li>
                         </ul>
-
-                        
-                </div>
-                
+                </div>  
         </div>
     </nav>
 

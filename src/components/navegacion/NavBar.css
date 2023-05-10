@@ -2,12 +2,30 @@
 
 .container-fluid{
     padding-left: 25px;
+    
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+  
+.text-container {
+    margin-right: 2px;
+}
+  
+.arrow-container {
+    font-size: 1rem;
+    position: relative;
+    margin-top: 7px; /* mueve la flecha hacia arriba */
 }
 
 
-  
-.navbar{
-    position: relative;
+
+.navbar {
+    position: fixed;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -15,6 +33,7 @@
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     background-color: #ac9eb8;
+    z-index: 999;
 }
 
 .navbar-brand{
@@ -26,6 +45,23 @@
     padding: 0.5rem 1rem;
     color:#0f1d28;
     text-decoration: none;
+}
+
+.bi-caret-down-fill::before {
+    content: "\f229";
+}
+.bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
+    display: inline-block;
+    font-family: bootstrap-icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: -0.125em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #ac9eb8;
 }
 
 .nav-link-merch{
@@ -59,8 +95,9 @@
 }
 
 .nav-link-events{
+    margin-top: 1px;
     display: block;
-    padding: 0.5rem 1rem;
+    padding: 0.1rem 1rem;
     color: #ac9eb8;
     text-decoration: none;
     text-align: center;
@@ -69,18 +106,19 @@
     font-size: 17px;
     font-family: 'Noto Sans Georgian', sans-serif;
 }
-.nav-item-dropdown{
+
+.nav-item-dropdown {
     display: flex;
-    padding: 0.1rem 1rem;
+    margin-top: 5px;
+    padding: 0rem 0rem;
     justify-content: center;
     align-items: center;
-    background:  #0f1d28;
+    background: #0f1d28;
     text-decoration: none;
     width: 23%;
+    height: 14%;
     border: 1px solid #ac9eb8;
-
-}   
-
+}  
 
 .navbar-toggler{
     display: block;
@@ -171,5 +209,3 @@
     border-radius: 40px;
     padding: 4px 5px 4px 7px;
 }
-  
-  

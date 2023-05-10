@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kite+One&display=swap');
+
+.video-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+
+}
+
+.video-container video {
+    width: 100%;
+    height: 80%;
+}
+
+.Video-principal {
+    position: relative;
+}
+  
+
+.content{
+    position: absolute;
+    top: 53%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.btn-video{
+    text-decoration: none;
+    font-family: 'Kite One', sans-serif;
+    background:  #ac9eb8;
+    border-radius: 999px;
+    box-shadow:  #ac9eb8 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #0f1d28;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 0px 90px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+}
+
+.btn-video:hover{
+    box-shadow: rgba(201, 74, 252, 0.35) 0 -25px 18px -14px inset,rgba(221, 141, 241, 0.25) 0 1px 2px,rgba(179, 66, 255, 0.295) 0 2px 4px,rgba(197, 131, 235, 0.25) 0 4px 8px,rgba(176, 130, 228, 0.233) 0 8px 16px,rgba(191, 108, 230, 0.25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+}
+
+

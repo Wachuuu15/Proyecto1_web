@@ -19,7 +19,18 @@ Babel
 
 
 # Instalación
-Para instalar y utilizar el proyecto, es necesario seguir los siguientes pasos:
+Para instalar y utilizar el proyecto, es necesario seguir los siguientes pasos:}
+npm install
+
+Uso
+Para correr la aplicación, se debe ejecutar el siguiente comando:
+
+Genera un servidor de desarrollo en el entorno webpack
+```sh
+npm start
+```
+
+
 
 # Clonar el repositorio.
 Navegar a la carpeta del proyecto y ejecutar el comando npm install para instalar las dependencias del proyecto.
@@ -27,6 +38,11 @@ Ejecutar el comando npm start para iniciar el servidor local y visualizar el pro
 
 # Uso
 Una vez que el proyecto está instalado y el servidor local está ejecutándose, la página web se puede visualizar en el navegador. En la página principal se encuentra el reproductor de video. Para reproducir un video de YouTube, se debe hacer clic en el botón de reproducción que aparece en el centro del reproductor.
+
+Genera un servidor de desarrollo en el entorno webpack
+```sh
+npm start
+```
 
 
 #Contribución

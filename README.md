@@ -1,4 +1,8 @@
 # Proyecto1_web
+```diff
++ Creadora: Jennifer Toxcon 
+
+```
 Este es un proyecto de una página web desarrollado utilizando React.js. La página cuenta con un reproductor de video que reproduce un video de YouTube.
 
 # Funcionalidades

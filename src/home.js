@@ -7,6 +7,9 @@ import Edition from "./components/edition/edition";
 import Merch from "./components/merch/Merch";
 import Eras from "./components/eras/Eras";
 import Reproductor from "./components/reproductor/Reproductor";
+import Lavander from "./components/lavander/Lavander";
+import SingUp from "./components/signup/SignUp";
+import Social from "./components/social/Social";
 
 
 function Home(){
@@ -23,6 +26,9 @@ function Home(){
             <Merch/>
             <Eras/>
             <Reproductor/>
+            <Lavander/>
+            <SingUp/>
+            <Social/>
         </div>
     );
 }

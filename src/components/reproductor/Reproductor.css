@@ -1,16 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@600;700;800;900&display=swap');
 
-
-.video-reproduction{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-}
-
 .Reproductor-container {
     position: relative;
 }
@@ -22,27 +11,142 @@
     transform: translateY(-50%);
     z-index: 2;
     cursor: pointer;
+   
 }
-  
-.text-video {
+.next-button img{
+    width: 50px;
+    height: 50px;
+    transform: rotate(180deg);
+}
+
+.prev-button {
     position: absolute;
     top: 50%;
     left: 20px;
     transform: translateY(-50%);
     z-index: 2;
+    cursor: pointer;
+   
+}
+.prev-button img{
+    width: 50px;
+    height: 50px;
+   
+}
+
+
+  
+.video-reproduction {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0%;
+    padding: 0;
+    overflow: hidden;
+    background-size: cover;
+}
+
+.video-reproduction img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+  
+.video-reproduction::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+  
+.text-video {
+    position: absolute;
+    top: 90%;
+    z-index: 2;
     font-weight: 800;
-    font-size: 60px;
-    color: red;
+    font-size: 50%;
+    color: white;
     font-family: 'Noto Sans Georgian', sans-serif;
 }
-
-
+  
 .play {
     position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(50%);
     z-index: 2;
     cursor: pointer;
+    transform: translateY(-6%);
+
 }
+
+.play:active {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4); /* Aplica una sombra al presionar */
+    border-radius: 70%;
+}  
+
+
+  
+.video-reproduction2,
+.video-reproduction3 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+}
+  
+.video-reproduction2::after,
+.video-reproduction3::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.video-reproduction2 img,
+.video-reproduction3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-video2,
+.text-video3 {
+    position: absolute;
+    top: 90%;
+    z-index: 2;
+    font-weight: 800;
+    font-size: 50%;
+    color: white;
+    font-family: 'Noto Sans Georgian', sans-serif;
+}
+  
+.play2,
+.play3 {
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    transform: translateY(-6%);
+}
+
+.play2:active,
+.play3:active {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4); /* Aplica una sombra al presionar */
+    border-radius: 70%;
+}  
+
   

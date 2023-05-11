@@ -15,18 +15,33 @@ function Reproductor() {
   const sliderRef = useRef();
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: currentSlide,
-    beforeChange: (oldIndex, newIndex) => setCurrentSlide(newIndex)
+    beforeChange: (oldIndex, newIndex) => setCurrentSlide(newIndex),
+    arrows: false, // Oculta los botones "Next" y "Previous"
+
   };
 
   const goToSlide = (index) => {
     setCurrentSlide(index);
     sliderRef.current.slickGoTo(index);
+  };
+
+  const getSlideText = () => {
+    switch (currentSlide) {
+      case 0:
+        return 'LAVANDER HAZE (OFFICIAL MUSIC VIDEO)';
+      case 1:
+        return 'ANTI-HERO (OFFICIAL MUSIC VIDEO)';
+      case 2:
+        return 'BEJEWELED (OFFICIAL MUSIC VIDEO)';
+      default:
+        return '';
+    }
   };
 
   return (
@@ -36,20 +51,20 @@ function Reproductor() {
           <div className="video-reproduction">
             <img src={Lavander} alt="Slide 1" />
             <div className="text-video">
-              <h2>LAVANDER HAZE (OFFICIAL MUSIC VIDEO)</h2>
+              <h2>{getSlideText()}</h2>
             </div>
             <div className="play">
               <img src={Play} alt="Play button" />
             </div>
           </div>
         </div>
-        <div className="slide">
+        <div className="slide2">
           <div className="video-reproduction2">
             <img src={Anti} alt="Slide 2" />
-            <div className="text-video">
-              <h2>ANTI-HERO (OFFICIAL MUSIC VIDEO)</h2>
+            <div className="text-video2">
+              <h2>{getSlideText()}</h2>
             </div>
-            <div className="play">
+            <div className="play2">
               <img src={Play} alt="Play button" />
             </div>
           </div>
@@ -65,6 +80,7 @@ function Reproductor() {
             </div>
           </div>
         </div>
+       
       </Slider>
 
       <div className="next-button">
@@ -75,6 +91,16 @@ function Reproductor() {
           style={{ cursor: 'pointer' }}
         />
       </div>
+
+      <div className="prev-button">
+        <img
+        src={next}
+        alt="Previous Slide"
+        onClick={() => goToSlide((currentSlide - 1 + 3) % 3)}
+        style={{ cursor: 'pointer' }}
+        />
+</div>
+
     </div>
   );
 }
